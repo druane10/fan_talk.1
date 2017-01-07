@@ -4,4 +4,5 @@ class Article < ActiveRecord::Base
   has_one :content
   has_many :comments
   validates_formatting_of :main_color, using: :hex_color
+  validates_formatting_of :background_color, using: :hex_color
 end
