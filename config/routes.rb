@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :media
+
   resources :text_blocks
 
   resources :comments do
